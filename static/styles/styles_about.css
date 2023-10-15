@@ -1,0 +1,70 @@
+img{
+    height: 100vh;
+    width: 100vw;
+}
+
+nav{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    padding-right: 30px;
+}
+
+ul.topnav{
+    list-style: none;
+    overflow: hidden;
+}
+
+ul.topnav li {
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+
+ul.topnav li a {
+  display: block;
+  color: rgb(102, 51, 0);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+ul.topnav li a:hover{
+    background-color: burlywood;
+    border-radius: 10px;
+}
+
+#logo {
+    float: left;
+    width: 80px;
+    height: 80px;
+}
+
+#logo > a > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+#logo > a{
+    padding: 0;
+}
+
+main.content > div{
+    background-image: url("../images/background3.jpg");
+    position: absolute;
+    top: 15%;
+    text-align: center;
+    width: 57%;
+    height: auto;
+    min-height: 60%;
+    margin-left: 20%;
+    border-radius: 10px;
+}
+main.content > div > p {
+    padding: 30px;
+    font-size: 18px;
+    color: rgb(102, 51, 0);
+}

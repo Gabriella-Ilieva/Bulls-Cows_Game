@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test page</title>
+    <link rel="stylesheet" href="{% static 'styles/reset.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/styles_about.css' %}">
+</head>
+<body>
+    <div class="main-container">
+        <img src="{% static 'images/bulls&cows.jpg' %}">
+        <div>
+            <nav>
+                <ul class="topnav">
+                    <li><a href="#"><b>РЕГИСТРИРАЙ СЕ</b></a></li>
+                    <li><a href="#"><b>ВЛЕЗ</b></a></li>
+                    <li><a href="#"><b>ПРАВИЛА</b></a></li>
+                    <li><a href="#"><b>ЗА ИГРАТА</b></a></li>
+                    <li id="logo"><a><img src="{% static 'images/logo.png' %}"></a></li>
+                </ul>
+            </nav>
+        </div>
+        <main class="content">
+            {% block content %}
+
+            {% endblock %}
+        </main>
+    </div>
+</body>
+</html>
